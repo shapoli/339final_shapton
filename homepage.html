@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <title> Design Portfolio</title>
+    </head>
+    <body>
+        <div class="skip"><a href="#main">Skip to Main Content</a></div>
+        <header>
+            <h1> Design Portfolio </h1>
+            <nav>
+                <ol>
+                     <li class="active"><a href = "homepage.html" >About Me</a></li>
+                     <li><a href = "chair.html">Copenhagen Chair</a></li>
+                     <li><a href = "table.html"> Kitchen Table</a></li>
+                </ol>
+            </nav>
+        </header> 
+        <main class="setup" id = "main">
+            <div class = "introduction">
+                <h1>Welcome!</h1>
+                <p>This website gives insight into my work as a student, designer, and collaborator. Falling into the world of art and design as a little kid, I have continued to grow as a designer and individual from creating illustrations, physical pieces, and now exploring user experience design.
+                </p>
+                <p>Designing meaningful quality pieces is something I strive for in my work and I’m excited to strengthen my passion for creating and learning through different mediums and practices. This portfolio offers a glimpse into my creative process and the start of my journey as a designer. </p>
+            </div>
+            
+            <img id = "intro-image" src="homepage_images/intro-image.png" alt="Zoomed in shot of kitchen table bench showing cream fabric and organic leg design."/>
+            
+        
+            <img id = "break-image" src="homepage_images/wood-breaker.png" alt="Stacks of cut wood on top of each other, creating geometric shape."/>
+            
+            <div class = "background-text">
+                <h1> A little about who I am...</h1>
+                <p>I’m currently a junior at the University of Michigan studying user experience design in the School of Information with a minor in fine arts and product design. As I continue to learn and grow skills in user experience design, I still love working with my hands, creating physical products such as chairs and tables, as well as drawing and painting. Aside from working on school projects, I love to be in the kitchen with my family cooking and baking, or being in the wood shop with my father working on our latest project. </p>
+            </div>
+            
+            <img id = "background-image" src="homepage_images/aboutme.png" alt = "Picture of Oliver Shapton wearing a rain jacket and jeans at a garden in Copenhagen, Denmark.">
+            
+            <div class = "work-text">
+                <h1>My Work</h1>
+                <p>Some of my work that I've designed and created over the years in various mediums.</p>
+            </div>
+        
+            <img id = "plants" src ="homepage_images/plants.png" alt = "Botanical study, medium: watercolor and ink.">
+           
+            <img id = "razor" src ="homepage_images/razor.png" alt = "Drawing of razor and blade in various perspectives, medium: pencil.">
+            
+            <img id = "bridge-outside" src ="homepage_images/bridge-outside.png" alt = "Three foot model of Columbia covered truss bridge, made with wood and metal.">
+        
+            <img id = "bridge-inside" src ="homepage_images/bridge-inside.png" alt = "Inside of model bridge showing road and support system made of crossed wooden beams with metal poles in the center.">
+            
+            <img id = "portrait" src ="homepage_images/self-portrait.png" alt = "Self portrait of Oliver Shapton from shoulders up, medium: pencil.">
+            
+            <img id = "model-chair" src ="homepage_images/model-chair.png" alt = "1 to 5 model of Takt Soft chair created with wood and glue.">
+        
+
+
+            <figure id = "video" alt="Animated video demonstrating a figure doing the moon walk on the earth.">
+
+                <video class = "video" 
+                    autoplay="false" 
+                    width= "100%" 
+                    height="100%" 
+                    id="player1" 
+                    preload="none"
+                    src="4D_2_AnimationFinal_ShaptonO.mp4">
+                      
+                    <track src="captions_en.vtt" kind="captions" srclang="en" label="english_captions">	
+                          Your browser does not support HTML5 video.
+                </video>
+            </figure> 
+            <p id="video_info">Rotoscope Animation: Moon, moon walking</p>
+            <div class = "options">
+                <button  id = "play">Play Video</button>
+                <button  id = "pause">Pause Video</button>
+                <button  id = "slower">Slow Down</button>
+                <button  id = "faster">Speed Up</button>
+                <button  id = "skip">Skip Ahead</button>
+                <button id="mute">Mute</button><br>
+            </div>
+            <div class="slider">
+                <label for="slider">Volume</label>: 0 <input type="range" id="slider" min="0" max="100" value="100" step="10"> 100%<br>
+            </div>
+	        <div class="volume">Volume is: <span id = "volume"> </span><br><br></div>
+
+            <button class="contact" onclick="openForm()">Contact Me</button>
+            <div class="form" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                  <h1>Send a Message</h1>
+              
+                  <label for="fname"><b>Name</b></label>
+                  <input id="fname" type="text" placeholder="Enter name" name="name" required>
+              
+                  <label for="subject"><b>Message</b></label>
+                  <input id="subject" type="text" placeholder="Enter message" name="subject" required>
+              
+                  <button type="submit" class="btn">Send</button>
+                  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+              </div>
+
+        
+        </main>
+        <script src="js/video.js"></script>
+        <script src="js/form.js"></script>
+        <footer>
+            <p>Thanks for stopping by <br/> Oliver Shapton - Design Portfolio - 2022</p>
+        </footer>
+    </body>
+</html>
